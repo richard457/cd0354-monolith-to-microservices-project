@@ -1,0 +1,6 @@
+kind: ConfigMap
+metadata:
+  name: my-configmap
+data:
+  postgres_database: postgres
+  bucket: arn:aws:s3:::mono-dev
