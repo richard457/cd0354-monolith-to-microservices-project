@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: udagram-api-user
-          image: yegobox/udagram-api-user:v2
+          image: yegobox/udagram-api-user:v5
           ports:
             - containerPort: 8080
           env:
