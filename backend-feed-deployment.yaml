@@ -19,6 +19,9 @@ spec:
           image: yegobox/udagram-api-feed:v5
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: "250m"
           env:
             # Define the environment variable
             - name: POSTGRES_USERNAME
