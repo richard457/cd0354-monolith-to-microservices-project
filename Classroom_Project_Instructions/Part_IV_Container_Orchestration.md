@@ -135,11 +135,11 @@ Once you have the External IP of your front end and reverseproxy deployment, Cha
 
 
 
-* *udagram-frontend/src/environments/environment.ts* file - Replace 'http://localhost:8080/api/v0' string with either the Cluster IP of the *reverseproxy* deployment.  
+* *udagram-frontend/src/environments/environment.ts* file - Replace 'a29e43485c33444e68e32db92704a8b6-1205146428.us-east-1.elb.amazonaws.com/api/v0' string with either the Cluster IP of the *reverseproxy* deployment.  
 
 
 
-*  *udagram-frontend/src/environments/environment.prod.ts* - Replace 'http://localhost:8080/api/v0' string. 
+*  *udagram-frontend/src/environments/environment.prod.ts* - Replace 'a29e43485c33444e68e32db92704a8b6-1205146428.us-east-1.elb.amazonaws.com/api/v0' string. 
 
 
 

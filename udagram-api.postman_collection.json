@@ -630,7 +630,7 @@
 		{
 			"id": "3e3ea131-5328-4f50-8fe1-516e3995917d",
 			"key": "host",
-			"value": "http://localhost:8080",
+			"value": "a29e43485c33444e68e32db92704a8b6-1205146428.us-east-1.elb.amazonaws.com",
 			"type": "string"
 		}
 	]

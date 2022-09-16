@@ -16,7 +16,7 @@ npm run dev
 ```
 
 ### Verification
-Once this command is run successfully, visit the `http://localhost:8080/api/v0/feed` in your web browser to verify that the application is running. You should see a JSON payload.
+Once this command is run successfully, visit the `a29e43485c33444e68e32db92704a8b6-1205146428.us-east-1.elb.amazonaws.com/api/v0/feed` in your web browser to verify that the application is running. You should see a JSON payload.
 
 ## Frontend App
 ### Download Dependencies

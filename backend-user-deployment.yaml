@@ -19,3 +19,55 @@ spec:
           image: yegobox/udagram-api-user:v2
           ports:
             - containerPort: 8080
+          env:
+            # Define the environment variable
+            - name: POSTGRES_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: postgres_username
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: postgres_password
+            - name: POSTGRES_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: postgres_host
+            - name: POSTGRES_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: postgress_db
+            - name: AWS_BUCKET
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: aws_bucket
+            - name: AWS_REGION
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: aws_region
+            - name: URL
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: url
+            - name: AWS_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: aws_access_key
+            - name: JWT_SECRET
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: jwt_secret
+            - name: AWS_PROFILE
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: aws_profile

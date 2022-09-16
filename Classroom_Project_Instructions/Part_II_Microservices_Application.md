@@ -133,7 +133,7 @@ http {
     }
 }
 ```
-The Nginx container will expose 8080 port. The configuration file above, in the `server` section, it will route the *http://localhost:8080/api/v0/feed* requests to the *backend-user:8080* container. The same applies for the *http://localhost:8080/api/v0/users* requests.
+The Nginx container will expose 8080 port. The configuration file above, in the `server` section, it will route the *a29e43485c33444e68e32db92704a8b6-1205146428.us-east-1.elb.amazonaws.com/api/v0/feed* requests to the *backend-user:8080* container. The same applies for the *a29e43485c33444e68e32db92704a8b6-1205146428.us-east-1.elb.amazonaws.com/api/v0/users* requests.
 
 
 ### Current Directory Structure
